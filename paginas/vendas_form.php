@@ -1,5 +1,5 @@
 <style>
-	
+	body {background-color:red;}
 </style>
 <div style="width:400px; margin:0 auto; border:1px solid black;">
     <form id="vendas">
