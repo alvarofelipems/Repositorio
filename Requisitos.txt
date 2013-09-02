@@ -1,0 +1,32 @@
+Cadastrar os dados das vendas
+ - DATA DO PEDIDO
+ - DATA DE COMPRA
+ - NUMERO DO PEDIDO
+ - CODIGO DE RASTREIO
+ - NOME DO CLIENTE
+ - PRODUTO
+ - PREÇO EM DOLAR (somar 6,38% de IOF quando pago no cartão de crédito)
+ - TAXA PAGSEGURO
+ - CUSTO TOTAL EM REAL CONTANDO CONVERSÃO DO DOLAR + IOF + PAGSEGURO)
+ - PREÇO DE VENDA EM R$
+ - MARGEM DE LUCRO EM %
+ - LUCRO LIQUIDO EM R$
+ - E-MAIL DO CLIENTE
+ - FORMA DE PAGAMENTO (PRECISO QUE TENHA UMA TELA NO SISTEMA ONDE EU POSSA ADICIONAR AS FORMAS, POIS FAREI O USO DE VÁRIOS CARTÕES E BOLETOS)
+ - STATUS DO PEDITO (COMPRADO / ENVIADO / CONCLUIDO) PODE SE USAR ICONES APENAS
+ - STATUS DE ENVIO DE E-MAIL (COMPRA / ENCOMENDA JUNTO AO FORNECEDOR / DESPACHADO / COMPRA FINALIZADA / AGUARDANDO RETIRADA NOS CORREIOS) PODE SER ICONES
+
+Relatório
+
+ - Filtro por Meios de Pagamento
+ - Filtro por produto
+ - Filtro por Data
+ - Busca universal
+
+Envio de e-mail
+
+ - Possibilidade de criar modelos de e-mail, e escolher qual modelo enviar na hora do disparo.
+ - Mostrar no relatório qual e-mail já foi enviado para cada cliente.
+
+
+

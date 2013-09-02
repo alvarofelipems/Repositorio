@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteBase /
+
+ErrorDocument 404 /inc/404.php
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule 			^([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/$ index.php?URL_Pagina_1=$1&URL_Pagina_2=$2&URL_Pagina_3=$3
+RewriteRule 			^([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)$ index.php?URL_Pagina_1=$1&URL_Pagina_2=$2&URL_Pagina_3=$3
+
+RewriteRule 			^([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)\/$ index.php?URL_Pagina_1=$1&URL_Pagina_2=$2
+RewriteRule 			^([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)$ index.php?URL_Pagina_1=$1&URL_Pagina_2=$2
+
+RewriteRule 			^([a-zA-Z0-9_-]+)\/$ index.php?URL_Pagina_1=$1
+RewriteRule 			^([a-zA-Z0-9_-]+)$ index.php?URL_Pagina_1=$1
