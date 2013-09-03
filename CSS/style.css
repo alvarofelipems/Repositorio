@@ -1,35 +1,94 @@
-@charset "utf-8";
-/* CSS Document */
-
-* {
-	margin:0px;
-	padding:0px;
-	border:0px;
-}
-
-body {
-	background-color:white;
-}
-
-input {
-	border:1px solid #999;
-}
-
-li {
-	list-style:none;
-	float:left;
-}
-.corpo {
+*{font: Arial , helvetica, sans-serif;}
+.corpo{
 	width:1000px;
 	margin:0 auto;
 }
-
-table {
-	border:1px solid black;
-	margin: 0 auto 15px;
+body{
+	background:url(/img/bg.png) #ececec;
+	border:0;
+	margin:0;
+	padding:0;
+	font:400 14px Arial , helvetica, sans-serif;
+	line-height:1.2;
+	color:#666;
 }
-
-td {
-	border:1px solid black;
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none}
+strong, b{
+	font:700 14px Arial , helvetica, sans-serif;
 }
+h1, h2, h3, h4, h4, h6{
+	font: Arial , helvetica, sans-serif;
+	color:#333;
+}
+a{
+  color: #3366cc;
+  text-decoration: none;
+}
+a:active, a:hover{
+  color:#3366cc;
+  text-decoration: underline;
+}
+.clear{
+	clear:both;
+}
+#site{
+	width:980px;
+	margin:10px auto;
+}
+.mostrar{
+	float:left;	
+	width:440px;
+	margin:4px;
+	padding:15px;
+	background:#fff;
+	border:1px solid #d1d1d1;
 	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.mostrar h2{margin:20px 0 10px 0; border-bottom:1px solid #eee;width:100%;}
+
+.edit{
+	width:600px;
+	margin:10px auto;
+	background:#fff;
+	border:1px solid #d1d1d1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:30px;
+}
+.edit h2{margin:0 0 10px 0; border-bottom:1px solid #eee;width:100%;}
+label{
+	display:block;
+	font:700 14px Arial , helvetica, sans-serif;
+	margin:10px 0 5px 0;
+	float:left;
+}
+input[type=text]{
+	width:588px;
+	margin:5px 0 10px 0;
+	display:block;
+	font:400 14px Arial , helvetica, sans-serif;
+	height:18px;
+	line-height:18px;
+	padding:5px;
+	border:1px solid #666;
+}
+input[type=submit]{
+	display:block;
+	border:0;
+	padding:7px 15px;
+	background:#333;
+	font-weight:700;
+	color:#fff;
+	line-height:16px;
+	float:right;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor:pointer;
+}
+input[type=submit]:hover{background:#000;}

@@ -1,9 +1,36 @@
-<div>
 <?php
 	$Vendas = new Vendas;
 	$vendas = $Vendas->listar();
-	$FormasDePagamento = new FormasDePagamento;
+	//$FormasDePagamento = new FormasDePagamento;
 ?>
+
+<?php
+    for($i=0; $i<$vendas['linhasSelecionadas']; $i++) {
+?>
+<div class="mostrar">
+	<h2>Cliente</h2>
+    <ul>
+    	<li><b>Nome:</b> <?php echo $vendas['data'][$i]['cliente']; ?></li>
+    	<li><b>Email:</b> <?php echo $vendas['data'][$i]['email']; ?></li>
+    </ul>
+    <h2>Produto</h2>
+    <ul>
+    	<li><b>Nome do produto:</b> <?php echo $vendas['data'][$i]['produto']; ?></li>
+        <li><b>Data do pedido:</b> <?php echo date('d/m/y', strtotime($vendas['data'][$i]['dataPedido'])); ?></li>
+        <li><b>Data da compra:</b> <?php echo date('d/m/y', strtotime($vendas['data'][$i]['dataCompra'])); ?></li>
+        <li><b>Código do produto:</b> <?php echo $vendas['data'][$i]['pedidoCOD']; ?></li>
+        <li><b>Código de rastreamento:</b> <a href="<?php if($vendas['data'][$i]['rastreioCOD'] != NULL)
+		echo 'http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_LINGUA=001&P_TIPO=001&P_COD_UNI='.$vendas['data'][$i]['rastreioCOD']; ?>" target="_blank"><?php echo $vendas['data'][$i]['rastreioCOD']; ?></a></li>
+        <li><b>Nome do produto:</b> Relógio</li>
+    </ul>
+</div>
+
+<?php
+}
+echo '<div class="clear"></div>';
+exit;
+?>
+<div>
 	
 <?php
     for($i=0; $i<$vendas['linhasSelecionadas']; $i++) {
@@ -55,3 +82,4 @@
 		
     
 </div>
+
